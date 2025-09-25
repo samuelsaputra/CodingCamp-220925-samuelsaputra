@@ -1,0 +1,14 @@
+.logo {
+  height: 75px;
+  width: 75px;
+  background-color: lightgray;
+  background-image: url(https://picsum.photos/200);
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+}

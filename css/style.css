@@ -1,8 +1,7 @@
 .logo {
   height: 75px;
   width: 75px;
-  background-color: lightgray;
-  background-image: url(https://picsum.photos/200);
+  background-image: url("../assets/images/logo.png");
   border-radius: 50%;
   background-position: center;
   background-size: cover;
@@ -11,4 +10,5 @@
 .main-header {
   display: flex;
   justify-content: space-between;
+  background-color: #000b58;
 }

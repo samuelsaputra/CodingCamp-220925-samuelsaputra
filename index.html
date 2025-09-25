@@ -19,15 +19,25 @@
       <div class="logo"></div>
 
       <!-- Navigation Menu -->
-      <nav>
-        <ul class="flex h-[100%] items-center gap-[2px]">
-          <li><a class="border p-[8px] rounded" href="#home">Home</a></li>
-          <li><a class="border p-[8px] rounded" href="#profile">Profile</a></li>
+      <nav class="text-white">
+        <ul class="flex h-[100%] items-center gap-[2px] pr-[10px]">
           <li>
-            <a class="border p-[8px] rounded" href="#portfolio">Portfolio</a>
+            <a class="border-transparent p-[8px] rounded" href="#home">Home</a>
           </li>
           <li>
-            <a class="border p-[8px] rounded" href="#message-us">Message Us</a>
+            <a class="border-transparent p-[8px] rounded" href="#profile"
+              >Profile</a
+            >
+          </li>
+          <li>
+            <a class="border-transparent p-[8px] rounded" href="#portfolio"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a class="border-transparent p-[8px] rounded" href="#message-us"
+              >Message Us</a
+            >
           </li>
         </ul>
       </nav>
@@ -40,12 +50,12 @@
       <!-- Home Section -->
       <section
         id="home"
-        class="min-h-[100vh] flex flex-col justify-center items-center gap-[20px]"
+        class="min-h-[100vh] flex flex-col justify-center items-center gap-[20px] bg-[url('./assets/images/building.png')] bg-cover"
       >
-        <h1 class="text-[36px] font-bold">
-          Welcome <span id="username"></span> to My Portfolio
+        <h1 class="text-[36px] font-bold text-white text-shadow-md">
+          Welcome, <span id="username"></span> to My Portfolio
         </h1>
-        <p class="text-[18px]">
+        <p class="text-[18px] text-white text-shadow-md">
           This is the home section of my portfolio website.
         </p>
       </section>

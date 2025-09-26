@@ -97,10 +97,65 @@
       <!-- Portfolio Section -->
       <section
         id="portfolio"
-        class="min-h-[100vh] flex flex-col justify-center items-center gap-[20px] bg-slate-200"
+        class="min-h-[100vh] flex flex-col justify-center items-center gap-[40px] bg-slate-200 py-[50px]"
       >
-        <h2 class="text-[30px] font-bold">Portfolio</h2>
-        <p class="text-[18px]">This section showcases my projects and work.</p>
+        <h2 class="text-[30px] font-bold">Our Portfolio</h2>
+        <p class="text-[18px] max-w-[700px] text-center">
+          At Velora Motors, we offer a wide range of vehicles and services to
+          fit every lifestyle and budget. Explore some of our featured
+          categories below.
+        </p>
+
+        <!-- Portfolio Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-[50px]">
+          <!-- Luxury Cars -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img
+              src="./assets/images/luxury-car.jpg"
+              alt="Luxury Car"
+              class="w-full h-[300px] object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Luxury Cars</h3>
+              <p>
+                Premium models with cutting-edge performance, comfort, and
+                elegance.
+              </p>
+            </div>
+          </div>
+
+          <!-- Certified Pre-Owned -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img
+              src="./assets/images/used-car.jpg"
+              alt="Pre-Owned Car"
+              class="w-full h-[300px] object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Certified Pre-Owned</h3>
+              <p>
+                Reliable cars inspected and certified, offering quality at a
+                great value.
+              </p>
+            </div>
+          </div>
+
+          <!-- Services -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img
+              src="./assets/images/financing.jpg"
+              alt="Financing Service"
+              class="w-full h-[300px] object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Financing & Trade-In</h3>
+              <p>
+                Personalized financing options and trade-in programs to make
+                your car buying journey easier.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <hr />

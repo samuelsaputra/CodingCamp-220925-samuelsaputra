@@ -2,31 +2,38 @@ welcomeMessage();
 
 /// Welcome Message
 function welcomeMessage() {
-  /// Prompt user for their name
   let username = prompt("Enter your name:");
-  /// If a name is entered, display it in the header; otherwise, show a default message
   if (username) {
-    /// Display the username in the header
     document.getElementById("username").innerHTML = username;
   } else {
-    /// If no name is entered, show a default welcome message
     alert("Welcome to my portfolio!");
   }
 }
 
-/// Form Validation
-function validateForm() {
-  /// Get form values
+/// Form Validation + Output
+function validateForm(event) {
+  event.preventDefault();
+
   let name = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
+  let dob = document.getElementById("dob").value;
+  let gender = document.querySelector('input[name="gender"]:checked');
   let message = document.getElementById("message").value;
 
-  /// Simple validation
-  if (name === "" || email === "" || message === "") {
-    /// If any field is empty, show an alert
+  if (name === "" || dob === "" || !gender || message === "") {
     alert("Please fill in all fields.");
-  } else {
-    /// If all fields are filled, show a success message
-    alert(`Thanks, ${name}! Form submitted successfully!`);
+    return;
   }
+
+  // Show results in the right box
+  document.getElementById("outName").textContent = name;
+  document.getElementById("outDob").textContent = dob;
+  document.getElementById("outGender").textContent = gender.value;
+  document.getElementById("outMessage").textContent = message;
 }
+
+/// Live current time
+function updateTime() {
+  document.getElementById("currentTime").textContent = new Date().toString();
+}
+setInterval(updateTime, 1000);
+updateTime();

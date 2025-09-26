@@ -108,43 +108,68 @@
         class="min-h-[100vh] flex flex-col justify-center items-center gap-[20px]"
       >
         <h2 class="text-[30px] font-bold">Message Us</h2>
-        <form>
-          <div class="mb-[10px]">
-            <label for="name" class="block mb-[5px]">Name:</label>
+        <form class="p-6 rounded-md w-[400px]">
+          <!-- Nama -->
+          <div class="flex items-center mb-4">
+            <label for="name" class="w-[120px]">Nama :</label>
             <input
               type="text"
               id="name"
               name="name"
-              class="border p-[8px] rounded w-[300px]"
+              placeholder="Nama"
+              class="border p-2 rounded flex-1"
               required
             />
           </div>
-          <div class="mb-[10px]">
-            <label for="email" class="block mb-[5px]">Email:</label>
+
+          <!-- Tanggal Lahir -->
+          <div class="flex items-center mb-4">
+            <label for="dob" class="w-[120px]">Tanggal Lahir :</label>
             <input
-              type="email"
-              id="email"
-              name="email"
-              class="border p-[8px] rounded w-[300px]"
+              type="date"
+              id="dob"
+              name="dob"
+              class="border p-2 rounded flex-1"
               required
             />
           </div>
-          <div class="mb-[10px]">
-            <label for="message" class="block mb-[5px]">Message:</label>
+
+          <!-- Jenis Kelamin -->
+          <div class="flex items-center mb-4">
+            <label class="w-[120px]">Jenis Kelamin :</label>
+            <div class="flex gap-4">
+              <label class="flex items-center gap-1">
+                <input type="radio" name="gender" value="Laki-Laki" required />
+                Laki-Laki
+              </label>
+              <label class="flex items-center gap-1">
+                <input type="radio" name="gender" value="Perempuan" />
+                Perempuan
+              </label>
+            </div>
+          </div>
+
+          <!-- Pesan -->
+          <div class="flex items-start mb-4">
+            <label for="message" class="w-[120px] pt-2">Pesan :</label>
             <textarea
               id="message"
               name="message"
-              class="border p-[8px] rounded w-[300px] h-[100px]"
+              placeholder="Pesan"
+              class="border p-2 rounded flex-1 h-[100px]"
               required
             ></textarea>
           </div>
-          <button
-            type="button"
-            onclick="validateForm()"
-            class="bg-blue-500 text-white p-[10px] rounded hover:bg-blue-600"
-          >
-            Send
-          </button>
+
+          <!-- Submit -->
+          <div class="flex justify-center">
+            <button
+              type="submit"
+              class="border w-full p-2 rounded hover:bg-gray-100"
+            >
+              Submit
+            </button>
+          </div>
         </form>
       </section>
     </main>
